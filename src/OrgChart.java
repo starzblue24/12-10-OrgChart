@@ -15,4 +15,18 @@ public class OrgChart
     System.out.println(man.toString() + "\n\t" + emp.toString() + "\n\t" + emp1.toString());
     System.out.println(man1.toString() + "\n\t" + emp2.toString());
   }
+    public static void printInfo(Person p)
+  {
+    if(p instanceof Manager)
+    {
+      Manager m=(Manager) p;
+     System.out.println(p.toString()+" ");
+    }
+    else if(p instanceof Person)
+    {
+      Person k=(Manager) p;
+      System.out.println(p.toString()+" ");
+    }
+      
+}
 }
