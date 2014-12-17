@@ -58,5 +58,14 @@ public class Employee extends Person
   {
     man=newManager;
   }
+    public boolean equals(Object o)
+  {
+    if(o instanceof Manager)
+    {
+      Manager m=(Manager) o;
+    return m.getWage()==this.getWage() && m.hoursWorked()==this.hoursWorked() && m.getWeeklySalary()==this.getWeeklySalary()&& this.getJobTitle().equalsIgnoreCase(m.getJobTitle());
+    }
+    return false;
+}
 }
   
