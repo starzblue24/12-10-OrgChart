@@ -36,4 +36,13 @@ public class Person
   {
     age+=1;
   }
+   public boolean equals(Object u)
+  {
+    if(u instanceof Manager)
+    {
+      Manager f=(Manager) u;
+    return f.getFirstName()==this.getFirstName() && f.getLastName()==this.getLastName() && f.getAge()==this.getAge();
+    }
+    return false;
+}
 }
