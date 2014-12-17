@@ -33,6 +33,15 @@ public void setDepartment(String dept)
 {
   department=dept;
 }
+  public boolean equals(Object h)
+  {
+    if(h instanceof Manager)
+    {
+      Manager r=(Manager) h;
+    return r.getDirectReports()==this.getDirectReports()&& r. getDepartment()==this. getDepartment();
+    }
+    return false;
+}
 }
   
 
